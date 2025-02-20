@@ -7,7 +7,6 @@ const getGoals = asyncHandler (async (req, res) => {
 })
 
 const setGoals = asyncHandler (async(req, res) => {
-    console.log(req.body.text)
     if (!req.body.text) {
         res.status(400)
         throw new Error('No data')
